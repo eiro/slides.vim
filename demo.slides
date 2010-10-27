@@ -31,6 +31,7 @@
 
      a fullscreen terminal
      vim
+     ~/.vim/plugin/slides.vim
      ~/.vim/ftplugin/slides.vim
      your *.slides
 
