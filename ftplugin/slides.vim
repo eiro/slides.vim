@@ -19,6 +19,8 @@ nmap ,, o,,
 nnoremap ,z :.w !zsh<cr><cr>
 " ,v show images from qiv -f
 nnoremap ,v :.w !xargs qiv -f<cr><cr>
+nnoremap <buffer> <PageUp> zk
+nnoremap <buffer> <PageDown> zj
 
 " Presentation mode open and close folders automatically
 command -nargs=0 Presentation set fdo=all fcl=all
@@ -26,4 +28,3 @@ Presentation
 
 " Edition mode reset default folding behavior
 command -nargs=0 Edition set fcl= fdo=block,hor,mark,percent,quickfix,search,tag,undo
-
