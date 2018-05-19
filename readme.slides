@@ -72,6 +72,12 @@
     last slide       ┃ PageUp
     show/hide agenda ┃ :AgendaToggle<cr>
 
+› emphasize
+
+    because some words are important
+    you can use npsp (alt-space) to
+    emphasize them.
+
 › tips: editing
 
      toggle numbers and folding (switch to edition mode)
@@ -82,21 +88,31 @@
 › tips: digraphs
 
     :h digraphs
+
+› digraphs: tables
+
     VV ┃ vertical
     HH ┃ horizontal
     LD ┓ left down
     RU ┗ right up
     ...
     and so on ...
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃RD                      LD ┃
-┃Vr                      Vl ┃
-┣━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
-┃                           ┃
-┃                           ┃
-┃                           ┃
-┃UR                       UL┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+    ┃RD                      LD ┃
+    ┃Vr                      Vl ┃
+    ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+    ┃                           ┃
+    ┃                           ┃
+    ┃                           ┃
+    ┃UR                       UL┃
+    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+› digraphs: maths
+
+    ∀ FA forall
+    ∈ (-
+    ∞ 00
+    ...
 
 › tips: emojis
 

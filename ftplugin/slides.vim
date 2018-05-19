@@ -19,6 +19,9 @@
     highlight Folded cterm=none ctermbg=none ctermfg=white
     set statusline=0 noshowmode noruler noshowcmd
     setlocal nonu cursorline so=0 laststatus=0
+    " use nbsp to emphasize something
+    " see emphasize.slides demo
+    highlight emphasize ctermfg=red cterm=bold
 
 " every slide starts with a ›
 set fdm=expr foldexpr=getline(v:lnum)=~'^\ *›'?'>1':1
@@ -43,6 +46,9 @@ command -nargs=0 AgendaToggle call AgendaToggle()
 command -nargs=0 Presentation set fdo=all fcl=all
 Presentation
 AgendaToggle
+
+
+
 
 " Dead code ? ( just toggle foldenable? )
     " Edition mode reset default folding behavior
