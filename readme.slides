@@ -1,0 +1,138 @@
+› slides.vim
+
+     simple slides made simple 😍
+
+› why ?
+
+     need slides, have no time
+     prototyping
+     remote/collaborative display
+
+› prototyping
+
+    ▶ git revision
+    ▶ lightweight as a text file
+    ▶ autofolding: quick rearange
+    ▶ WYSIWYG
+
+› remote/collaborative display
+
+    ▶ ssh forced command
+    ▶ slides.vim + ii + tmux + ...
+
+› cons ?
+
+     only text, code, emoji and ascii art
+     also vim customization
+
+› system requirement
+
+     a fullscreen terminal
+     vim + slides.vim
+     your *.slides
+
+› which term ? (gnome terminal)
+
+    👍 good support of 256 colors term
+    👍 nice emoji rendering
+
+› which term ? (terminology)
+
+    👍 transparency, background
+    👍 better look
+    ?  support images ?
+
+› which term ? (to test)
+
+     web based terminal ? (mixed with animation?)
+     coolretroterm ? (fun old school looking demos :))
+
+› usage
+
+    # install slides.vim (:h packages)
+    # vim is now aware of .slides file extension
+
+    $ vim yourtalk.slides
+
+› insertion mappings
+
+    (*    ┃ ▶<space>
+    (-    ┃ <space>
+    ("    ┃ ›<space>
+    (5    ┃  <cr> <cr> <cr> <cr> <cr><esc>5kA
+
+    " TIP: whenever you  want to edit (:h 'fen)
+    :set fen!
+
+› presentation mappings
+
+    in normal mode
+
+    next slide       ┃ PageDown
+    last slide       ┃ PageUp
+    show/hide agenda ┃ :AgendaToggle<cr>
+
+› tips: editing
+
+     toggle numbers and folding (switch to edition mode)
+        :set nu! fen!
+     next slide
+        /^›
+
+› tips: digraphs
+
+    :h digraphs
+    VV ┃ vertical
+    HH ┃ horizontal
+    LD ┓ left down
+    RU ┗ right up
+    ...
+    and so on ...
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃RD                      LD ┃
+┃Vr                      Vl ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                           ┃
+┃                           ┃
+┃                           ┃
+┃UR                       UL┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+› tips: emojis
+
+    iab :-) ☺️
+    iab xD 😃
+    iab x3 😍
+    iab :-( ☹️
+    iab :'( 😭
+    iab D:< 😱
+    iab :') 😂
+    iab :-O 😲
+    iab :-* 😘
+    iab :+1 👍
+    iab :-/ 🤔
+    iab :$ 😖
+    iab :-X 🤐
+    iab B) 😎
+    iab %) 😵
+    iab :## 🤢
+    iab !m! 🤘
+    iab ;-o 🤨
+    iab _ok 🗸
+
+› tips: more emojis from gnome
+
+    if you're using gnome:
+     install gnome characters
+     activate "characters" in gnome search
+     now you can search for "pile of " to get 💩
+
+› more tips
+
+    just read tips.md
+
+› Thank you
+
+     questions ?
+     fork me! http://github.com/eiro/slides.vim
+
