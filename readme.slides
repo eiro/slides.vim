@@ -147,6 +147,16 @@
 
     just read [tips.md](https://github.com/eiro/slides.vim/blob/master/tips.md)
 
+› Known bugs
+
+    you can't have more than 1 emphasize in a line
+    because (say X is nbsp):
+
+        Xem1XtextXem2X
+
+    you want to emphasize em1 and em2 but text also
+    is a region between 2 X so the whole line is
+    highlighted.
 
 › Thank you
 

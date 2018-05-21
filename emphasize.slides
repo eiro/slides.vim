@@ -32,7 +32,7 @@
 
 › perl with Function::Parameters
 
-    fun hello ( $who = 'world' ) {
+    fun hello ( $who = 'world' ) {
         # my $who = @_ ? shift : "world"; 
         say "hello $who";
     }
