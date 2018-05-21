@@ -1,1 +1,1 @@
-syn match emphasize "\v [^ ]+ "
+syn match emphasize "\v \zs[^ ]+\ze "
