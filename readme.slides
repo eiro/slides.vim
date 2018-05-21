@@ -22,8 +22,10 @@
 
 › cons ?
 
-     only text, code, emoji and ascii art
-     also vim customization
+    only text, code, emojis and all unicode but ...
+
+     vim customization (see emphasize slide)
+     !eog -f  ~/slides*(o)& when things get visual
 
 › system requirement
 
@@ -40,12 +42,18 @@
 
     👍 transparency, background
     👍 better look
-    ?  support images ?
+
+› which term ? (coolretroterm)
+
+    fun old school looking demos :)
+    check the tip to compile into a docker
+
+    just read [tips.md](https://github.com/eiro/slides.vim/blob/master/tips.md)
 
 › which term ? (to test)
 
-     web based terminal ? (mixed with animation?)
-     coolretroterm ? (fun old school looking demos :))
+     web based terminal ?
+      with all the web features available too?
 
 › usage
 
@@ -89,30 +97,75 @@
 
     :h digraphs
 
-› digraphs: tables
+    get the list of digraphs in a text file
 
-    VV ┃ vertical
-    HH ┃ horizontal
-    LD ┓ left down
-    RU ┗ right up
-    ...
+        :redir > ~/digraphs.txt
+        :digraphs
+        :redir END
+        :e ~/digraphs.txt
+
+    define a new digraph
+
+        " in zsh: print $[16#1F44D]
+        dig +1 128077
+
+    so now <c-k>+1 means 👍
+
+› drawing with digraphs
+
+    draw charts and tables can be drawn
+    with digraphs:
+
+    vv │ vertical
+    hh ─ horizontal
+    vh ┼ vertical and horizontal
+    dh ┬ down  horizontal
+    uh ┴ up    horizontal
+    ld ┐ left down
+    ur └ up right
+
     and so on ...
-    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-    ┃RD                      LD ┃
-    ┃Vr                      Vl ┃
-    ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
-    ┃                           ┃
-    ┃                           ┃
-    ┃                           ┃
-    ┃UR                       UL┃
-    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-› digraphs: maths
+› drawing with digraphs: examples
 
-    ∀ FA forall
-    ∈ (-
+    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+    ┃RD                          LD ┃
+    ┃Vr                          Vl ┃
+    ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+    ┃                               ┃
+    ┃                               ┃
+    ┃                               ┃
+    ┃UR                           UL┃
+    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+› drawing with digraphs: tips
+
+    use numeral adjectives:
+    5i<c-k>vv gives you ─────
+
+    get used to <c-v> to resize cols:
+    <c-v>4l8jx to remove 4 char width
+    <c-v>8jx5p to add 4 char width
+
+    5i<c-k>vv gives you ─────
+
+    use upercase to bold:
+    <c-k>vv<c-k>VV gives you │┃
+
+› maths and digraphs
+
+    ∀ FA    and more ... see :digraphs
+    ∈ (-    also greek alphabet is available with *
     ∞ 00
-    ...
+    ⌠ Iu    α *a
+    │ vv    β *b
+    ⌡ Il    π *p
+    ∑ +Z    ∏ *P
+    ∏ *P
+
+› example
+
+    ℚ = { (𝑚 ,𝑛) | (𝑚 ,𝑛) ∈ ℤ  Χ ( ℤ \ {0} ) }
 
 › tips: emojis
 
@@ -139,7 +192,7 @@
 › tips: more emojis from gnome
 
     if you're using gnome:
-     install gnome characters
+     install gnome-characters and gnome-character-map
      activate "characters" in gnome search
      now you can search for "pile of " to get 💩
 
