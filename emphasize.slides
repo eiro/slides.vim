@@ -1,9 +1,12 @@
 › first
 
+  to emphasize something, just use non breaking spaces
+  (<alt-space>) around it.
+
   be sure there is no nbsp entry for listchars.
   the easiest way to do it is
 
-    :set listchars=
+    :set list!
 
 › did you spot the 1 ?
 
@@ -23,19 +26,13 @@
     000 0 0 0 0 0
     000 0 0 0 0 0
 
-› perl w/o Function::Parameters
+› perl Function::Parameters
 
     sub hello {
-        my $who = @_ ? shift : "world";
+        my $who = @_ ? shift : "world"; 
         say "hello $who";
     }
-
-› perl with Function::Parameters
 
     fun hello ( $who = 'world' ) {
-        # my $who = @_ ? shift : "world"; 
         say "hello $who";
     }
-
-
-

@@ -18,7 +18,7 @@
     highlight CursorLine cterm=bold ctermbg=blue ctermfg=white
     highlight emphasize cterm=bold ctermfg=darkred ctermbg=none
     highlight Folded cterm=none ctermbg=none ctermfg=white
-    set statusline=0 noshowmode noruler noshowcmd listchars=
+    set statusline=0 noshowmode noruler noshowcmd nolist
     setlocal nonu cursorline so=0 laststatus=0
     " use nbsp to emphasize something
     " see emphasize.slides demo
