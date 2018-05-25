@@ -1,8 +1,13 @@
-› slides.vim
+› slides.vim: simple slides made simple
 
-     simple slides made simple 😍
+   30 lines of vim config
+   WYSIWYG
+   emphasize/highlighted with non breaking spaces
+   easy mode switching (edition/presentation)
 
-› why ?
+        :set fen! list! 
+
+› when ?
 
      need slides, have no time
      prototyping
@@ -48,12 +53,8 @@
     fun old school looking demos :)
     check the tip to compile into a docker
 
-    just read [tips.md](https://github.com/eiro/slides.vim/blob/master/tips.md)
-
-› which term ? (to test)
-
-     web based terminal ?
-      with all the web features available too?
+    just read tips.md
+    (https://github.com/eiro/slides.vim/blob/master/tips.md)
 
 › usage
 
@@ -198,8 +199,8 @@
 
 › more tips
 
-    just read [tips.md](https://github.com/eiro/slides.vim/blob/master/tips.md)
-
+    just read tips.md
+    (https://github.com/eiro/slides.vim/blob/master/tips.md)
 › Known bugs
 
     you can't have more than 1 emphasize in a line
@@ -210,6 +211,62 @@
     you want to emphasize em1 and em2 but text also
     is a region between 2 X so the whole line is
     highlighted.
+
+› history
+
+     written   in 2009 because of a deadline
+     published in 2010 because of a deadline
+     evolved on my laptop since then because of deadlines
+     used at Journées Perl 2018
+     evolutions and documentations pushed to github
+      because someone wanted to know
+
+› see also
+
+    i use to use slides.vim when i ran out of time.
+    Nowadays, unicode symbols and emojis are randered
+    nicely in terminals so i can do some nice looking
+    presentations using slides.vim.
+
+    to be confortable with slides.vim, you should be
+    confortable with abbreviations (:h :iab)
+    and digraphs (:h :digr) and learn about the basic ones.
+
+    i wasn't aware of the other vim presentation.
+    So the next slides are there to mention i'm aware of
+    those projects but notes are probably unfair.
+
+› other presentation tools
+
+vroom (the only one i knew about in circa 2010)
+  https://metacpan.org/pod/distribution/Vroom/lib/Vroom.pod
+
+vimdeck     https://github.com/tybenz/vimdeck
+git-slides  https://github.com/gelisam/git-slides
+presenting  https://github.com/sotte/presenting.vim
+pip slides  https://pypi.org/project/slides.vim/
+
+› stuck on slides.vim because
+
+    vimdeck    │ Probably too heavy/complicated ?
+    vroom      │
+    pip slides │
+
+› stuck on slides.vim because
+
+    presenting │ renders badly
+    git-slides │
+
+› outside of vim
+
+    pandoc can turn markdown files into
+     a beamer file (latex class)
+     a reveal.js file
+
+    pug, stylus and livescript can used
+    in combinaison with
+    ▶ pandoc + reveal.js
+    ▶ impress.js
 
 › Thank you
 
