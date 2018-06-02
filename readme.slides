@@ -87,6 +87,17 @@
     you can use npsp (alt-space) to
     emphasize them.
 
+› possible improvements
+
+     resurect subsections the right way: 2 lines
+
+        section title
+        slide title
+
+     more highlighing possibilities
+     automatically gnome-screenshot every slide
+      to build a pdf version
+
 › tips: editing
 
      toggle numbers and folding (switch to edition mode)
@@ -218,7 +229,7 @@
      published in 2010 because of a deadline
      evolved on my laptop since then because of deadlines
      used at Journées Perl 2018
-     evolutions and documentations pushed to github
+     evolutions and documentation pushed to github
       because someone wanted to know
 
 › see also
@@ -228,14 +239,18 @@
     nicely in terminals so i can do some nice looking
     presentations using slides.vim.
 
-    to be confortable with slides.vim, you should be
+    to be productive with slides.vim, you should be
     confortable with abbreviations (:h :iab)
     and digraphs (:h :digr) and learn about the basic
     ones.
 
-    i wasn't aware of the other vim presentation.
-    So the next slides are there to mention i'm aware
-    of those projects but notes are probably unfair.
+    i wasn't aware of vroom and it seems all the other
+    vim presentation plugins came after my own tool.
+    slides.vim became exactly what i want: 30 lines
+    of viml to produce slides in a very short time
+    with a look i really like so i have no reason to
+    just even test the other ones and the next slides
+    are probably unfair.
 
 › other presentation tools
 
@@ -249,14 +264,15 @@ pip slides  https://pypi.org/project/slides.vim/
 
 › stuck on slides.vim because
 
-    vimdeck    │ Probably too heavy/complicated ?
-    vroom      │
-    pip slides │
+   Probably too         │ vimdeck
+   heavy/complicated    │ vroom
+                        │ pip slides
 
 › stuck on slides.vim because
 
-    presenting │ renders badly
-    git-slides │
+  renders badly         │ presenting
+  according to          │ git-slides
+  screenshots           │
 
 › outside of vim
 
@@ -268,6 +284,7 @@ pip slides  https://pypi.org/project/slides.vim/
     in combinaison with
     ▶ pandoc + reveal.js
     ▶ impress.js
+
 
 › Thank you
 
