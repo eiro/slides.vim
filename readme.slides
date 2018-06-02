@@ -230,15 +230,16 @@
 
     to be confortable with slides.vim, you should be
     confortable with abbreviations (:h :iab)
-    and digraphs (:h :digr) and learn about the basic ones.
+    and digraphs (:h :digr) and learn about the basic
+    ones.
 
     i wasn't aware of the other vim presentation.
-    So the next slides are there to mention i'm aware of
-    those projects but notes are probably unfair.
+    So the next slides are there to mention i'm aware
+    of those projects but notes are probably unfair.
 
 › other presentation tools
 
-vroom (the only one i knew about in circa 2010)
+  vroom (the only one i knew about in circa 2010)
   https://metacpan.org/pod/distribution/Vroom/lib/Vroom.pod
 
 vimdeck     https://github.com/tybenz/vimdeck
