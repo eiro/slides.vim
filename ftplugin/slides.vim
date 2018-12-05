@@ -43,3 +43,10 @@ if !exists('*AgendaToggle')
 endif
 
 AgendaToggle
+
+fun SlidesRC ()
+    for it in glob(expand('%:r').'.vim',v:true,v:true)
+        exec "so ".it
+    endfor
+endfun
+au BufNewFile,BufRead *.slides call SlidesRC()
