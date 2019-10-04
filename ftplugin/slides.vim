@@ -4,6 +4,7 @@
 " › = 1>
 
 " edition commands:
+    inoremap <buffer> (' <space><c-o>i
     inoremap <buffer> (* ▶<space>
     inoremap <buffer> (- <space>
     inoremap <buffer> (" ›<space>
@@ -14,17 +15,19 @@
     nnoremap <buffer> <PageDown> zjzt
 
 " Theme:
-    highlight CursorLine cterm=bold ctermbg=blue ctermfg=white
+    highlight SlideTitle     cterm=bold ctermbg=blue ctermfg=white
+    highlight SlideTitleTail cterm=bold ctermbg=none ctermfg=blue
+    " highlight CursorLine cterm=bold ctermbg=blue ctermfg=white
     highlight emphasize cterm=bold ctermfg=darkred ctermbg=none
     highlight Folded cterm=none ctermbg=none ctermfg=white
-    setlocal fcs=fold:\ ,diff:\  cursorline
+    setlocal fcs=fold:\ ,diff:\
+    " setlocal cursorline
     setlocal noshowmode noruler noshowcmd nolist nonu
     setlocal so=0 laststatus=0 statusline=0
     " use nbsp to emphasize something
     " see emphasize.slides demo
 
-" every slide starts with a ›
-setlocal fdm=expr fdo=all fcl=all foldexpr=getline(v:lnum)=~'^\ *›'?'>1':1
+setlocal fdm=expr fdo=all fcl=all foldexpr=getline(v:lnum)=~'$'?'>1':1
 let b:show_agenda=v:true
 
 if !exists('*AgendaToggle')
@@ -41,6 +44,9 @@ if !exists('*AgendaToggle')
     endfun
     command -nargs=0 AgendaToggle call AgendaToggle()
 endif
+
+command -range=% SlidesUpdate  <line1>,<line2>s/\v›(.*)/\1 /
+
 
 AgendaToggle
 
