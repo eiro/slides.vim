@@ -13,6 +13,15 @@
      prototyping
      remote/collaborative display
 
+ install 
+
+  clone git@github.com:eiro/slides.vim.git as a start section of a vim pack.
+  if you don't know about packs, i suggest to read `:help packages`.
+  if you don't care, just follow those instuctions.
+
+    mkdir ~/.vim/pack/slides.vim/start
+    git clone -C !$ git@github.com:eiro/slides.vim.git
+
  prototyping 
 
     ▶ git revision
