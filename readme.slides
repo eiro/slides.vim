@@ -140,6 +140,8 @@
     vv │ vertical
     hh ─ horizontal
     vh ┼ vertical and horizontal
+    vr ├ vertical and right
+    lv ┤ left     and vertical
     dh ┬ down  horizontal
     uh ┴ up    horizontal
     ld ┐ left down
