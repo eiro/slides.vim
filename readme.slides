@@ -1,3 +1,4 @@
+
 › slides.vim: simple slides made simple
 
    ~ 50 lines of vim config
@@ -74,9 +75,10 @@
 
 › insertion mappings
 
+
     (*    ┃ ▶<space>
     (-    ┃ <space>
-›    ("    ┃ <space>
+    ("    ┃ ›<space>
     (5    ┃  <cr> <cr> <cr> <cr> <cr><esc>5kA
 
     " TIP: whenever you  want to edit (:h 'fen)
@@ -95,6 +97,41 @@
     because some words are important
     you can use npsp (alt-space) to
     emphasize them.
+
+› SlidesRC
+
+the SlideRC command can abitrary vim code in the range
+
+    /^"<vim/,/^"vim>/
+
+some examples coming...
+
+› SlidesRC (define the flag)
+
+so here is the way to turn a BWR (blue, white, red)
+into a french flag
+
+"<vim
+syn match FranceFlagBlue   "\vB{4}"
+highlight FranceFlagBlue   ctermbg=lightblue ctermfg=lightblue
+syn match FranceFlagWhite  "\vW{4}"
+highlight FranceFlagWhite  ctermbg=white ctermfg=white
+syn match FranceFlagRed    "\vR{4}"
+highlight FranceFlagRed    ctermbg=red ctermfg=red
+"vim>
+
+    BBBBWWWWRRRR
+    BBBBWWWWRRRR
+
+› SlidesRC (theming)
+
+theming is basically redefining those 3 highlights:
+
+"<vim
+    highlight SlideTitle  cterm=bold ctermbg=blue ctermfg=white
+    highlight emphasize   cterm=bold ctermfg=darkred ctermbg=none
+    highlight Folded      cterm=none ctermbg=none ctermfg=white
+"vim>
 
 › possible improvements
 
