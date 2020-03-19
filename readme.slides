@@ -1,4 +1,4 @@
- slides.vim: simple slides made simple 
+› slides.vim: simple slides made simple
 
    ~ 50 lines of vim config
    WYSIWYG
@@ -7,13 +7,13 @@
 
         :set fen! list! 
 
- when ? 
+› when ?
 
      need slides, have no time
      prototyping
      remote/collaborative display
 
- install 
+› install
 
   clone git@github.com:eiro/slides.vim.git as a start section of a vim pack.
   if you don't know about packs, i suggest to read `:help packages`.
@@ -22,42 +22,42 @@
     mkdir ~/.vim/pack/slides.vim/start
     git clone -C !$ git@github.com:eiro/slides.vim.git
 
- prototyping 
+› prototyping
 
     ▶ git revision
     ▶ lightweight as a text file
     ▶ autofolding: quick rearange
     ▶ WYSIWYG
 
- remote/collaborative display 
+› remote/collaborative display
 
     ▶ ssh forced command
     ▶ slides.vim + ii + tmux + ...
 
- cons ? 
+› cons ?
 
     only text, code, emojis and all unicode but ...
 
      vim customization (see emphasize slide)
      !eog -f  ~/slides*(o)& when things get visual
 
- system requirement 
+› system requirement
 
      a fullscreen terminal
      vim + slides.vim
      your *.slides
 
- which term ? (gnome terminal) 
+› which term ? (gnome terminal)
 
     👍 good support of 256 colors term
     👍 nice emoji rendering
 
- which term ? (terminology) 
+› which term ? (terminology)
 
     👍 transparency, background
     👍 better look
 
- which term ? (coolretroterm) 
+› which term ? (coolretroterm)
 
     fun old school looking demos :)
     check the tip to compile into a docker
@@ -65,24 +65,24 @@
     just read tips.md
     (https://github.com/eiro/slides.vim/blob/master/tips.md)
 
- usage 
+› usage
 
     # install slides.vim (:h packages)
     # vim is now aware of .slides file extension
 
     $ vim yourtalk.slides
 
- insertion mappings 
+› insertion mappings
 
     (*    ┃ ▶<space>
     (-    ┃ <space>
-    ("    ┃ <space>  
+›    ("    ┃ <space>
     (5    ┃  <cr> <cr> <cr> <cr> <cr><esc>5kA
 
     " TIP: whenever you  want to edit (:h 'fen)
     :set fen!
 
- presentation mappings 
+› presentation mappings
 
     in normal mode
 
@@ -90,13 +90,13 @@
     last slide       ┃ PageUp
     show/hide agenda ┃ :AgendaToggle<cr>
 
- emphasize 
+› emphasize
 
     because some words are important
     you can use npsp (alt-space) to
     emphasize them.
 
- possible improvements 
+› possible improvements
 
      resurect subsections the right way: 2 lines
 
@@ -107,14 +107,14 @@
      automatically gnome-screenshot every slide
       to build a pdf version
 
- tips: editing 
+› tips: editing
 
      toggle numbers and folding (switch to edition mode)
         :set nu! fen!
      next slide
-        /^  
+›        /^
 
- tips: digraphs 
+› tips: digraphs
 
     :h digraphs
 
@@ -132,7 +132,7 @@
 
     so now <c-k>+1 means 👍
 
- drawing with digraphs 
+› drawing with digraphs
 
     draw charts and tables can be drawn
     with digraphs:
@@ -149,7 +149,7 @@
 
     and so on ...
 
- drawing with digraphs: examples 
+› drawing with digraphs: examples
 
     ┌│┐ think border box:
     └┘
@@ -166,7 +166,7 @@
     ┃UR                           UL┃
     ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
- drawing with digraphs: tips 
+› drawing with digraphs: tips
 
     use numeral adjectives:
     5i<c-k>vv gives you ─────
@@ -180,7 +180,7 @@
     use upercase to bold:
     <c-k>vv<c-k>VV gives you │┃
 
- maths and digraphs 
+› maths and digraphs
 
     <c-k>FA to get ∀ but also
 
@@ -192,33 +192,33 @@
     ∀ FA
     ∈ (-
     ∞ 00
-    ⌠ Iu 
-    │ vv 
-    ⌡ Il 
-    ∑ +Z 
+    ⌠ Iu
+    │ vv
+    ⌡ Il
+    ∑ +Z
     ∏ *P
 
- maths and digraphs 
+› maths and digraphs
 
-    FE E │ TE ∃ │ /0 ∅ │ DE ∆ │ NB ∇ │ (- ∈ │ -) ∋ │ 
-    *P ∏ │ +Z ∑ │ -2 − │ -+ ∓ │ *- ∗ │ Ob ∘ │ Sb ∙ │ 
-    RT √ │ 0( ∝ │ 00 ∞ │ -L ∟ │ -V ∠ │ PP ∥ │ AN ∧ │ 
-    OR ∨ │ (U ∩ │ )U ∪ │ In ∫ │ DI ∬ │ Io ∮ │ .: ∴ │ 
-    :. ∵ │ :R ∶ │ :: ∷ │ ?1 ∼ │ CG ∾ │ ?- ≃ │ ?= ≅ │ 
-    ?2 ≈ │ =? ≌ │ HI ≓ │ != ≠ │ =3 ≡ │ =< ≤ │ >= ≥ │ 
-    <* ≪ │ *> ≫ │ !< ≮ │ !> ≯ │ (C ⊂ │ )C ⊃ │ (_ ⊆ │ 
-    )_ ⊇ │ 0. ⊙ │ 02 ⊚ │ -T ⊥ │ .P ⋅ │ :3 ⋮ │ .3 … │ 
-    Eh ⌂ │ <7 ⌈ │ >7 ⌉ │ 7< ⌊ │ 7> ⌋ │ NI ⌐ │ (A ⌒ │ 
+    FE E │ TE ∃ │ /0 ∅ │ DE ∆ │ NB ∇ │ (- ∈ │ -) ∋ │
+    *P ∏ │ +Z ∑ │ -2 − │ -+ ∓ │ *- ∗ │ Ob ∘ │ Sb ∙ │
+    RT √ │ 0( ∝ │ 00 ∞ │ -L ∟ │ -V ∠ │ PP ∥ │ AN ∧ │
+    OR ∨ │ (U ∩ │ )U ∪ │ In ∫ │ DI ∬ │ Io ∮ │ .: ∴ │
+    :. ∵ │ :R ∶ │ :: ∷ │ ?1 ∼ │ CG ∾ │ ?- ≃ │ ?= ≅ │
+    ?2 ≈ │ =? ≌ │ HI ≓ │ != ≠ │ =3 ≡ │ =< ≤ │ >= ≥ │
+    <* ≪ │ *> ≫ │ !< ≮ │ !> ≯ │ (C ⊂ │ )C ⊃ │ (_ ⊆ │
+    )_ ⊇ │ 0. ⊙ │ 02 ⊚ │ -T ⊥ │ .P ⋅ │ :3 ⋮ │ .3 … │
+    Eh ⌂ │ <7 ⌈ │ >7 ⌉ │ 7< ⌊ │ 7> ⌋ │ NI ⌐ │ (A ⌒ │
     TR ⌕ │ Iu ⌠ │ Il ⌡ │ </ 〈│ /> 〉│ Vs ␣ │ Vs ␣ │
     => ⇒ │ == ⇔ │ -> → │ FA ∀ │ dP ∂
 
     and more ... see :digraphs
 
- example 
+› example
 
     ℚ = { (𝑚 ,𝑛) | (𝑚 ,𝑛) ∈ ℤ  Χ ( ℤ \ {0} ) }
 
- tips: emojis 
+› tips: emojis
 
     iab :-) ☺️
     iab xD 😃
@@ -240,19 +240,19 @@
     iab ;-o 🤨
     iab _ok 🗸
 
- tips: more emojis from gnome 
+› tips: more emojis from gnome
 
     if you're using gnome:
      install gnome-characters and gnome-character-map
      activate "characters" in gnome search
      now you can search for "pile of " to get 💩
 
- more tips 
+› more tips
 
     just read tips.md
     (https://github.com/eiro/slides.vim/blob/master/tips.md)
 
- Known bugs 
+› Known bugs
 
     you can't have more than 1 emphasize in a line
     because (say X is nbsp):
@@ -263,7 +263,7 @@
     is a region between 2 X so the whole line is
     highlighted.
 
- history 
+› history
 
      written   in 2009 because of a deadline
      published in 2010 because of a deadline
@@ -272,7 +272,7 @@
      evolutions and documentation pushed to github
       because someone wanted to know
 
- see also 
+› see also
 
     i use to use slides.vim when i ran out of time.
     Nowadays, unicode symbols and emojis are randered
@@ -292,7 +292,7 @@
     just even test the other ones and the next slides
     are probably unfair.
 
- other presentation tools 
+› other presentation tools
 
   vroom (the only one i knew about in circa 2010)
   https://metacpan.org/pod/distribution/Vroom/lib/Vroom.pod
@@ -302,19 +302,19 @@ git-slides  https://github.com/gelisam/git-slides
 presenting  https://github.com/sotte/presenting.vim
 pip slides  https://pypi.org/project/slides.vim/
 
- stuck on slides.vim because 
+› stuck on slides.vim because
 
    Probably too         │ vimdeck
    heavy/complicated    │ vroom
                         │ pip slides
 
- stuck on slides.vim because 
+› stuck on slides.vim because
 
   renders badly         │ presenting
   according to          │ git-slides
   screenshots           │
 
- outside of vim 
+› outside of vim
 
     pandoc can turn markdown files into
      a beamer file (latex class)
@@ -326,7 +326,7 @@ pip slides  https://pypi.org/project/slides.vim/
     ▶ impress.js
 
 
- Thank you 
+› Thank you
 
      questions ?
      fork me! http://github.com/eiro/slides.vim

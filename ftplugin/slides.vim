@@ -4,7 +4,7 @@
 " › = 1>
 
 " edition commands:
-    inoremap <buffer> (' <space><c-o>i
+    inoremap <buffer> (' <space>›<c-o>i
     inoremap <buffer> (* ▶<space>
     inoremap <buffer> (- <space>
     inoremap <buffer> (" ›<space>
@@ -27,13 +27,14 @@
     " use nbsp to emphasize something
     " see emphasize.slides demo
 
-setlocal fdm=expr fdo=all fcl=all foldexpr=getline(v:lnum)=~'$'?'>1':1
+setlocal fdm=expr fdo=all fcl=all foldexpr=getline(v:lnum)=~'^›'?'>1':1
 let b:show_agenda=v:true
 
 if !exists('*AgendaToggle')
     command -nargs=0 AgendaShow
         \  let b:show_agenda=v:true
-        \| setlocal foldtext=substitute(getline(v:foldstart),'.\\v(.*)','\\1\ \ \','')
+        \| setlocal foldtext=getline(v:foldstart)
+        " \| setlocal foldtext=substitute(getline(v:foldstart),'^..\\v(.*)','\\1\ \ \','')
     command -nargs=0 AgendaHide
         \  let b:show_agenda=v:false
         \| setlocal foldtext=substitute(getline(v:foldstart),'.\\v(.*)','','')
