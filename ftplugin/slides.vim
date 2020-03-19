@@ -16,12 +16,9 @@
 
 " Theme:
     highlight SlideTitle     cterm=bold ctermbg=blue ctermfg=white
-    highlight SlideTitleTail cterm=bold ctermbg=none ctermfg=blue
-    " highlight CursorLine cterm=bold ctermbg=blue ctermfg=white
     highlight emphasize cterm=bold ctermfg=darkred ctermbg=none
     highlight Folded cterm=none ctermbg=none ctermfg=white
     setlocal fcs=fold:\ ,diff:\
-    " setlocal cursorline
     setlocal noshowmode noruler noshowcmd nolist nonu
     setlocal so=0 laststatus=0 statusline=0
     " use nbsp to emphasize something
@@ -48,12 +45,8 @@ endif
 
 command -range=% SlidesUpdate  <line1>,<line2>s/\v›(.*)/\1 /
 
-
 AgendaToggle
 
-fun SlidesRC ()
-    for it in glob(expand('%:r').'.vim',v:true,v:true)
-        exec "so ".it
-    endfor
-endfun
-au BufNewFile,BufRead *.slides call SlidesRC()
+command -nargs=0 SlidesRC
+\ /^"<vim/,/^"vim>/w! /tmp/vimslidesrc
+\| so /tmp/vimslidesrc
