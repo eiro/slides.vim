@@ -182,19 +182,25 @@
 
  maths and digraphs 
 
-    ∀ FA    and more ... see :digraphs
-    ∈ (-    also greek alphabet is available with *
+    <c-k>FA to get ∀ but also
+
+   α *a  also greek alphabet is available with *
+    β *b
+    π *p
+    ∏ *P
+
+    ∀ FA
+    ∈ (-
     ∞ 00
-    ⌠ Iu    α *a
-    │ vv    β *b
-    ⌡ Il    π *p
-    ∑ +Z    ∏ *P
+    ⌠ Iu 
+    │ vv 
+    ⌡ Il 
+    ∑ +Z 
     ∏ *P
 
  maths and digraphs 
 
-    => ⇒ │ == ⇔ │ FA ∀ │ 
-    dP ∂ │ TE ∃ │ /0 ∅ │ DE ∆ │ NB ∇ │ (- ∈ │ -) ∋ │ 
+    FE E │ TE ∃ │ /0 ∅ │ DE ∆ │ NB ∇ │ (- ∈ │ -) ∋ │ 
     *P ∏ │ +Z ∑ │ -2 − │ -+ ∓ │ *- ∗ │ Ob ∘ │ Sb ∙ │ 
     RT √ │ 0( ∝ │ 00 ∞ │ -L ∟ │ -V ∠ │ PP ∥ │ AN ∧ │ 
     OR ∨ │ (U ∩ │ )U ∪ │ In ∫ │ DI ∬ │ Io ∮ │ .: ∴ │ 
@@ -203,7 +209,10 @@
     <* ≪ │ *> ≫ │ !< ≮ │ !> ≯ │ (C ⊂ │ )C ⊃ │ (_ ⊆ │ 
     )_ ⊇ │ 0. ⊙ │ 02 ⊚ │ -T ⊥ │ .P ⋅ │ :3 ⋮ │ .3 … │ 
     Eh ⌂ │ <7 ⌈ │ >7 ⌉ │ 7< ⌊ │ 7> ⌋ │ NI ⌐ │ (A ⌒ │ 
-    TR ⌕ │ Iu ⌠ │ Il ⌡ │ </ 〈│ /> 〉│ Vs ␣
+    TR ⌕ │ Iu ⌠ │ Il ⌡ │ </ 〈│ /> 〉│ Vs ␣ │ Vs ␣ │
+    => ⇒ │ == ⇔ │ -> → │ FA ∀ │ dP ∂
+
+    and more ... see :digraphs
 
  example 
 
