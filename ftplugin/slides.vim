@@ -15,8 +15,8 @@
     nnoremap <buffer> <PageDown> zjzt
 
 " Theme:
-    highlight SlideTitle     cterm=bold ctermbg=blue ctermfg=white
-    highlight emphasize cterm=bold ctermfg=darkred ctermbg=none
+    highlight Slidetitle cterm=bold ctermfg=white   ctermbg=blue
+    highlight Emphasize  cterm=bold ctermfg=darkred ctermbg=none
     highlight Folded cterm=none ctermbg=none ctermfg=white
     setlocal fcs=fold:\ ,diff:\
     setlocal noshowmode noruler noshowcmd nolist nonu
@@ -24,14 +24,14 @@
     " use nbsp to emphasize something
     " see emphasize.slides demo
 
-setlocal fdm=expr fdo=all fcl=all foldexpr=getline(v:lnum)=~'^›'?'>1':1
+setlocal fdm=expr fdo=all fcl=all foldexpr=getline(v:lnum)=~'^›\ '?'>1':1
+
 let b:show_agenda=v:true
 
 if !exists('*AgendaToggle')
     command -nargs=0 AgendaShow
         \  let b:show_agenda=v:true
         \| setlocal foldtext=getline(v:foldstart)
-        " \| setlocal foldtext=substitute(getline(v:foldstart),'^..\\v(.*)','\\1\ \ \','')
     command -nargs=0 AgendaHide
         \  let b:show_agenda=v:false
         \| setlocal foldtext=substitute(getline(v:foldstart),'.\\v(.*)','','')
