@@ -1,0 +1,4 @@
+#! /bin/sh
+set -e $( awk '{ printf "%s %03d", $0, $0 - 10 }' last )
+rm media/$1*
+echo $2 > last

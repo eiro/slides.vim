@@ -3,6 +3,15 @@
 " ‹ = 1<
 " › = 1>
 
+command -nargs=0 Mod set conceallevel=0 nofen list spell
+command -nargs=0 Prez set conceallevel=3 fen nolist nospell
+command -nargs=0 Record redir @a
+\| exe "normal \<c-l>"
+\| redraw
+\| silent call system("sh ./next")
+\| redir END
+
+nnoremap ,x :Record<cr>
 " edition commands:
     inoremap <buffer> (' <space>›<c-o>i
     inoremap <buffer> (* ▶<space>

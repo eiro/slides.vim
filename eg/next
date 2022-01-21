@@ -1,0 +1,5 @@
+#! /bin/sh
+set -e $( awk '{ printf "%03d", $0 + 10 }' last )
+echo $1 > last
+gnome-screenshot -f media/$1.png
+ffmpeg -v quiet -y -f alsa -i hw:2 media/$1.wav
