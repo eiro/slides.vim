@@ -1,0 +1,41 @@
+
+  vim: ft=slides et ts=2 sts=2 sw=2
+
+  speaker:
+  * don't remove the 'vim:' line if you don't know
+    what it is.
+  * if required, don't forget to load specific behaviour
+        so %:r.vim
+  * the essential mappings are
+    next slide     ┃ page down
+    previous slide ┃ page up
+    (*             ┃ ▶
+    (-             ┃ 
+    ("             ┃ › (new slide)
+    (5             ┃ 5 new 
+  * learn more reading readme.slides from slides.vim distro
+
+  if you want your title bar to be filled, set nowrap
+  and filter this file with:
+  awk '{ if (/^›/) printf "%-78s",$0; else print }'
+
+› title
+
+  Event name
+  Location, Date
+
+› welcome › agenda
+
+  ▷│ welcome
+  █│ the basics
+  █│ new features
+  █│ the future
+
+› welcome › agenda
+
+  ▷│ welcome
+   │ ▷ topic 1
+   │ ▷ topic 2
+  █│ the basics
+  █│ new features
+  █│ the future
