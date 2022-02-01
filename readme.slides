@@ -48,22 +48,37 @@
      vim + slides.vim
      your *.slides
 
-› which term ? (gnome terminal)
+› which term ?
+
+    Worth watching first: Features of a Modern Terminal Emulator
+    https://www.youtube.com/watch?v=9DgQqDnYNyQ
+
+    I tested terminology, gnome-terminal, st,
+    tilix, kitty, coolretroterm.
+
+› so which term ?
+
+    both kitty and tilix have
 
     👍 good support of 256 colors term
     👍 nice emoji rendering
+    👍 transparency and background
 
-› which term ? (terminology)
+› SO which term ?
 
-    👍 transparency, background
-    👍 better look
+    kitty renders "▒░" as a field of dots, which
+    is very hugly. did I miss an option ?
 
-› which term ? (coolretroterm)
+    I use tilix.
 
-    fun old school looking demos :)
-    check the tip to compile into a docker
+› special mention: coolretroterm
 
-    just read tips.md
+    Awesome theming for old school or futuristic/cyberpunk
+    looking.
+
+    Now available in debian package.
+
+    I used to use a docker file to build it:
     (https://github.com/eiro/slides.vim/blob/master/tips.md)
 
 › usage
