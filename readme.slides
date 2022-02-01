@@ -17,7 +17,7 @@
 › install
 
   clone git@github.com:eiro/slides.vim.git as a start section of a vim pack.
-  if you don't know about packs, i suggest to read `:help packages`.
+  if you don't know about packs, I suggest to read `:help packages`.
   if you don't care, just follow those instuctions.
 
     mkdir ~/.vim/pack/slides.vim/start
@@ -326,9 +326,9 @@ theming is basically redefining those 3 highlights:
 
 › see also
 
-    i use to use slides.vim when i ran out of time.
+    I use to use slides.vim when I ran out of time.
     Nowadays, unicode symbols and emojis are randered
-    nicely in terminals so i can do some nice looking
+    nicely in terminals so I can do some nice looking
     presentations using slides.vim.
 
     to be productive with slides.vim, you should be
@@ -336,17 +336,17 @@ theming is basically redefining those 3 highlights:
     and digraphs (:h :digr) and learn about the basic
     ones.
 
-    i wasn't aware of vroom and it seems all the other
+    I wasn't aware of vroom and it seems all the other
     vim presentation plugins came after my own tool.
-    slides.vim became exactly what i want: 30 lines
+    slides.vim became exactly what I want: 30 lines
     of viml to produce slides in a very short time
-    with a look i really like so i have no reason to
+    with a look I really like so I have no reason to
     just even test the other ones and the next slides
     are probably unfair.
 
 › other presentation tools
 
-  vroom (the only one i knew about in circa 2010)
+  vroom (the only one I knew about in circa 2010)
   https://metacpan.org/pod/distribution/Vroom/lib/Vroom.pod
 
 vimdeck     https://github.com/tybenz/vimdeck
