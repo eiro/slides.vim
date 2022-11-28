@@ -30,42 +30,13 @@ so the layer is
      ┃                           ┃
      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-# old school look and feel
+# cyberpunk theme
 
-## compile and use cool-retro-term
+cool-retro-term¹ emulates the old terminals, even hardware glitches.
 
-run a docker
+    apt install cool-retro-term
 
-    mkdir /tmp/crt
-    docker run --rm -it -v /tmp/crt:/code debian:buster
+I made a theme for this: check `myretrofuture.json`.
 
-inside the docker
-
-    apt update
-    apt install git build-essential \
-        qmlscene qt5-qmake qt5-default  \
-        qtdeclarative5-dev qml-module-qtquick-controls \
-        qml-module-qtgraphicaleffects qml-module-qtquick-dialogs \
-        qml-module-qtquick-localstorage qml-module-qtquick-window2 \
-        qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel
-    git clone --recursive https://github.com/Swordfish90/cool-retro-term.git
-    cd cool-retro-term/
-    qmake && make
-
-while compiling, install runtime dependencies on your system
-
-    sudo aptitude install \
-        qml-module-qt-labs-folderlistmodel \
-        qml-module-qt-labs-settings \
-        qml-module-qtquick-dialogs \
-        qml-module-qtquick-localstorage \
-        qml-module-qtquick-controls
-
-
-when everything is ready
-
-    # choose your own ~/local/bin :)
-    cp /tmp/crt/cool-retro-term/cool-retro-term ~/local/bin
-    rehash
-    cool-retro-term
+¹: https://github.com/Swordfish90/cool-retro-term
 
