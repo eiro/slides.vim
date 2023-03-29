@@ -18,11 +18,14 @@
   if you want your title bar to be filled, set nowrap
   and filter this file with:
   awk '{ if (/^›/) printf "%-78s",$0; else print }'
+  from vim:
+  %!awk '{ if (/^›/) printf "\%-78s",$0; else print }'
 
 › title
 
   Event name
   Location, Date
+  date +'  %A, %Y %m %d' -d ''
 
 › welcome › agenda
 
