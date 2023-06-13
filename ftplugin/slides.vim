@@ -52,8 +52,6 @@ if !exists('*AgendaToggle')
     command -nargs=0 AgendaToggle call AgendaToggle()
 endif
 
-command -range=% SlidesUpdate  <line1>,<line2>s/\v›(.*)/\1 /
-
 AgendaToggle
 
 command -nargs=0 SlidesRC
