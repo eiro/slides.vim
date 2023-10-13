@@ -3,6 +3,13 @@
 " ‹ = 1<
 " › = 1>
 
+let $PATH = join(
+\ [ $PATH
+\ , expand('<sfile>:p:h:h')."/bin"
+\ , expand('%:p:h')."/bin"
+\ ]
+\ , ":" )
+command -nargs=1 -range=% FixTitles <line1>,<line2>! slides.vim.fixtitles <args>
 command -nargs=0 Mod set conceallevel=0 nofen list spell
 command -nargs=0 Prez set conceallevel=3 fen nolist nospell
 command -nargs=0 Record redir @a
