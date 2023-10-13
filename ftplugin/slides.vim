@@ -10,8 +10,11 @@ let $PATH = join(
 \ ]
 \ , ":" )
 command -nargs=1 -range=% FixTitles <line1>,<line2>! slides.vim.fixtitles <args>
-command -nargs=0 Mod set conceallevel=0 nofen list spell
-command -nargs=0 Prez set conceallevel=3 fen nolist nospell
+
+set conceallevel=3 concealcursor=n
+command -nargs=0 Mod  set conceallevel=0 nofen spell
+command -nargs=0 Prez set conceallevel=3 fen nospell
+
 command -nargs=0 Record redir @a
 \| exe "normal \<c-l>"
 \| redraw
