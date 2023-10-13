@@ -1,0 +1,36 @@
+#!/bin/sh
+
+usage() <<% cat --
+
+just before running the talk:
+
+add extra tailing spaces to title lines so they looks like c columns long.
+this is something to do
+
+	$0 60
+
+when editing it: remove them
+
+	$0 -r
+remove
+
+%
+
+cmd="${1?at least one parameter, see $0 -h}"
+shift;
+
+expand() awk -F'›' '{
+	if (l = length($2)) printf "%-*s\n", l + c, $0
+	else print
+}' "$@"
+
+case "$cmd"
+	in ( [1-9]*      ) expand "c=$cmd" "$@"
+	;; ( -r | 0      ) sed -r '/›/s/ +$//' "$@"
+	;; ( -h | --help ) usage
+	;; ( *           )
+		>&2 echo "unknown command $cmd, see $0 -h"
+		exit 1
+esac
+
+
