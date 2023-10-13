@@ -46,7 +46,7 @@ command Hook exec matchstr(getline("."),"^\\v^[^›]+")
     " use nbsp to emphasize something
     " see emphasize.slides demo
 
-setlocal fdm=expr fdo=all fcl=all foldexpr=getline(v:lnum)=~'^›\ '?'>1':1
+setlocal fdm=expr fdo=all fcl=all foldexpr=getline(v:lnum)=~'›'?'>1':1
 
 let b:show_agenda=v:true
 
