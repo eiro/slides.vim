@@ -31,11 +31,14 @@ nnoremap ,x :Record<cr>
 
 " presentation command
     nnoremap <buffer> <PageUp> zkzt
-    nnoremap <buffer> <PageDown> zjzt
+    nnoremap <buffer> <PageDown> zjzt:Hook<cr>
+
+command Hook exec matchstr(getline("."),"^\\v^[^›]+")
 
 " Theme:
     highlight Slidetitle cterm=bold ctermfg=white   ctermbg=blue
     highlight Emphasize  cterm=bold ctermfg=darkred ctermbg=none
+    highlight Hook  ctermfg=darkred ctermbg=none
     highlight Folded cterm=none ctermbg=none ctermfg=white
     setlocal fcs=fold:\ ,diff:\
     setlocal noshowmode noruler noshowcmd nolist nonu
