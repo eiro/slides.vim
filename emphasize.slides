@@ -1,4 +1,4 @@
-› first
+ › first
 
   to emphasize something, just use non breaking spaces
   (<alt-space>) around it.
@@ -21,7 +21,7 @@
 
     000 0 0 0 0 0
     000 0 0 0 0 0
-    000 0 1 0 0 0
+    000 0  1  0 0 0
     000 0 0 0 0 0
     000 0 0 0 0 0
     000 0 0 0 0 0
@@ -30,7 +30,7 @@
 
     sub hello {
         my $who = @_ ? shift : "world"; 
-        say "hello $who";
+       say "hello $who";
     }
 
     fun hello ( $who = 'world' ) {
