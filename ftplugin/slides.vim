@@ -67,6 +67,13 @@ endif
 
 AgendaToggle
 
-command -nargs=0 SlidesRC
-\ /^"<vim/,/^"vim>/w! /tmp/vimslidesrc
-\| so /tmp/vimslidesrc
+command -nargs=0 LoadTheme
+\| set nofen
+\| silent /^" *<vim\>/;/^" *vim>/w! /tmp/vimslidestheme
+\| so /tmp/vimslidestheme
+\| silent exec "!rm /tmp/vimslidestheme"
+
+if search("^\" *<vim\\>","n") | LoadTheme
+endif
+set fen " should be a toggle in LoadTheme
+1
