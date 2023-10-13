@@ -51,18 +51,20 @@ setlocal fdm=expr fdo=all fcl=all foldexpr=getline(v:lnum)=~'›'?'>1':1
 let b:show_agenda=v:true
 
 if !exists('*AgendaToggle')
-    command -nargs=0 AgendaShow
+    command -nargs=0 Agenda
         \  let b:show_agenda=v:true
-        \| setlocal foldtext=getline(v:foldstart)
-    command -nargs=0 AgendaHide
+        \| setlocal foldtext=substitute(getline(v:foldstart),\".*›\",\"\",\"\")
+    command -nargs=0 NoAgenda
         \  let b:show_agenda=v:false
-        \| setlocal foldtext=substitute(getline(v:foldstart),'.\\v(.*)','','')
+        \| setlocal foldtext='\ '
+        " \| setlocal foldtext=substitute(getline(v:foldstart),'.\\v(.*)','','')
     fun AgendaToggle ()
-        if b:show_agenda | AgendaHide
-        else             | AgendaShow
+        if b:show_agenda | NoAgenda
+        else             | Agenda
         endif
     endfun
     command -nargs=0 AgendaToggle call AgendaToggle()
+    command -nargs=0 -bang A <bang>?AgendaShow:AgendaHide
 endif
 
 AgendaToggle
