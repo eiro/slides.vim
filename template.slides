@@ -1,4 +1,3 @@
-
   vim: ft=slides et ts=2 sts=2 sw=2
 
   speaker:
@@ -25,7 +24,17 @@
 
   Event name
   Location, Date
-  date +'  %A, %Y %m %d' -d ''
+
+  Available languages on your system:
+  grep '^[^#]' /etc/locale.gen
+
+  Add the date:
+  LANG=fr_FR.UTF-8 date +'  %A, %d %B %Y' -d ' nov 24'
+
+› ideas for multilevel + agenda ?
+
+ never explored
+
 
 › welcome › agenda
 
