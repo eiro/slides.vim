@@ -31,9 +31,10 @@ nnoremap ,x :Record<cr>
 
 " presentation command
     nnoremap <buffer> <PageUp> zkzt
-    nnoremap <buffer> <PageDown> zjzt:Hook<cr>
+    nnoremap <buffer> <PageDown> zjzt:Hook<cr>:redraw!<cr>
 
-command Hook exec matchstr(getline("."),"^\\v^[^›]+")
+command ExecTitleCode exec matchstr(getline("."),"^\\v^[^›]+")
+command Hook ExecTitleCode
 
 " Theme:
     highlight Slidetitle cterm=bold ctermfg=blue
