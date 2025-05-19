@@ -9,19 +9,23 @@ let $PATH = join(
 \ , expand('%:p:h')."/bin"
 \ ]
 \ , ":" )
-command -nargs=1 -range=% FixTitles <line1>,<line2>! slides.vim.fixtitles <args>
 
 set conceallevel=3 concealcursor=n
+
 command -nargs=0 Mod  set conceallevel=0 nofen spell
 command -nargs=0 Prez set conceallevel=3 fen nospell
 
+" TODO: not required (maybe plugin or eg/ ?)
+command -nargs=1 -range=% FixTitles <line1>,<line2>! slides.vim.fixtitles <args>
+" TODO: ctrl+l + redraw ?
+" TODO: still hacking on PDF generation! shame!
 command -nargs=0 Record redir @a
 \| exe "normal \<c-l>"
 \| redraw
 \| silent call system("sh ./next")
 \| redir END
 
-nnoremap ,x :Record<cr>
+nnoremap ,r :Record<cr>
 " edition commands:
     inoremap <buffer> (' <space>›<c-o>i
     inoremap <buffer> (* ▶<space>
