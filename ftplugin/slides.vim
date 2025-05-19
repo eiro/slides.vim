@@ -36,11 +36,11 @@ nnoremap ,x :Record<cr>
 command Hook exec matchstr(getline("."),"^\\v^[^›]+")
 
 " Theme:
-    highlight Slidetitle cterm=bold ctermfg=white   ctermbg=blue
-    highlight Emphasize  cterm=bold ctermfg=darkred ctermbg=none
-    highlight Hook  ctermfg=darkred ctermbg=none
-    highlight Folded cterm=none ctermbg=none ctermfg=white
-    setlocal fcs=fold:\ ,diff:\
+    highlight Slidetitle cterm=bold ctermfg=blue
+    highlight Emphasize  cterm=bold ctermfg=darkred  ctermbg=none
+    highlight Folded     cterm=none ctermfg=white    ctermbg=none
+    highlight Hook                  ctermfg=darkred  ctermbg=none
+    setlocal fcs=eob:\ ,fold:\ ,diff:\
     setlocal noshowmode noruler noshowcmd nolist nonu
     setlocal so=0 laststatus=0 statusline=0
     " use nbsp to emphasize something
