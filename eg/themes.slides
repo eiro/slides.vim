@@ -1,0 +1,90 @@
+
+sandbox for testing ideas for a slides.vim 1.0
+
+
+› J'arrive                                                         
+
+     zerrrezrr
+     zerzr
+     zerr
+     zerzrz
+     zerzr
+    ───────────────────────────────────────────────
+
+
+› Je pars                                                         
+
+
+silent !feh -FZ cosmos.jpeg› this is it                              
+
+mais trop  :)
+
+silent !mpv ~/mm/video/Curtis_Poe_Ovid_-_Roles_versus_Inheritance.webm› this is it
+
+mais aussi des slides pdf
+
+silent !zathura /home/mc/src/luc/slides.pdf -P 1 --mode=presentation› this is it
+
+› this is it                                                         
+ 
+ NR ▐ $(1)  │ $(2)  │ $(3)  │   $(4)               
+ 1	root	0	0	/bin/bash
+ 2	daemon	1	1	/usr/sbin/nologin
+ 3	bin	2	2	/usr/sbin/nologin
+ 4	sys	3	3	/usr/sbin/nologin
+ 5	sync	4	65534	/bin/sync
+
+› this is it                                                         
+
+ NR ▐ $(1)  │ $(2)  │ $(3)  │   $(4)               
+ 1	root	0	0	/bin/bash
+ 2	daemon 	1	1	/usr/sbin/nologin
+ 3	bin    	2	2	/usr/sbin/nologin
+ 4  ▐ sys  │  3    │  3    │  /usr/sbin/nologin
+ 5	sync	4	65534	/bin/sync
+
+› this is it                                                         
+
+	root	0	0	/bin/bash
+	daemon	1	1	/usr/sbin/nologin
+	bin	2	2	/usr/sbin/nologin
+	sys	3	3	/usr/sbin/nologin
+	sync	4	65534	/bin/sync
+
+
+
+› this is it                                                         
+
+   │██████████┊█████████┊████       France
+   │██████████┊████     ┊           UK
+   │██████████┊█████████┊██████     Allemagne
+   │         100       200
+
+› this is it                                                         
+
+"<vim:
+syn keyword True  vraie
+syn keyword False badluck
+highlight True ctermfg=blue ctermbg=none
+highlight False ctermfg=red ctermbg=none
+set list lcs=tab:\ \ │ ts=5
+syn region Shell matchgroup=ShellConceal start="┬" end="┴" concealends
+syn match Shell      "▐ .*"
+syn match Selection  "\v[^\t]+ "
+
+" syn match France  "▬\+\ze.*France"
+" syn match UK      "▬\+\ze.*UK"
+" syn match Allemagne  "▬\+\ze.*Allemagne"
+syn match France     "█\+\ze.*France"
+syn match UK         "█\+\ze.*UK"
+syn match Allemagne  "█\+\ze.*Allemagne"
+highlight France    ctermfg=red  ctermbg=none
+highlight UK        ctermfg=blue ctermbg=none
+highlight Allemagne ctermfg=green ctermbg=none
+
+highlight Selection ctermfg=black ctermbg=220
+highlight Shell     ctermfg=black ctermbg=220
+set vts=5,8
+highlight Terminal ctermfg=black ctermbg=220
+" highlight Terminal link Shell
+"vim>
