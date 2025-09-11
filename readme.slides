@@ -54,7 +54,7 @@
     https://www.youtube.com/watch?v=9DgQqDnYNyQ
 
     I tested terminology, gnome-terminal, st,
-    tilix, kitty, coolretroterm.
+    tilix, alacritty, kitty, coolretroterm.
 
 › so which term ?
 
@@ -66,10 +66,16 @@
 
 › SO which term ?
 
-    kitty renders "▒░" as a field of dots, which
-    is very hugly. did I miss an option ?
+	kitty renders "▒░" as a field of dots, which looks bad.
+	Also: it does too much things a terminal should not. It is useless,
+	bloats everything and confuse the newbies.
 
-    I use tilix.
+	Also: now I heard GTK will drop the X backend, I'll drop as much
+	GTK apps as possible from my desktop, can't wait for Xlibre to be
+	packaged in debian (and will leave debian if not).
+
+	So far I use alacritty just because it's the last one I tested
+	which works fine and doesn't depend on gnome technologies.
 
 › special mention: coolretroterm
 
