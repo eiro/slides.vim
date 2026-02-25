@@ -1,4 +1,10 @@
 
+› kiss github goodbye
+
+   clone clone and pull from
+	git://notebook.codelib.re/slides.vim.git
+   git format-patch --to=mc+slides.vim(A)unistra.fr
+
 › slides.vim: simple slides made simple
 
    ~ 50 lines of vim config
@@ -16,12 +22,11 @@
 
 › install
 
-  clone git@github.com:eiro/slides.vim.git as a start section of a vim pack.
-  if you don't know about packs, I suggest to read `:help packages`.
-  if you don't care, just follow those instuctions.
+  If you don't know about packs, I suggest to read `:help packages`.
+  If you don't care, just follow those instuctions.
 
     mkdir ~/.vim/pack/slides.vim/start
-    git clone -C !$ git@github.com:eiro/slides.vim.git
+    git clone -C !$ git://notebook.codelib.re/slides.vim.git
 
 › prototyping
 
